@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leatherbrown">
+
+
+    <RelativeLayout
+        android:id="@+id/editRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/contact_name_til"
+            style="@style/EditCardTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/contact_name_et"
+                style="@style/EditCardTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:hint="Contact Name"
+                android:nextFocusDown="@+id/address_et"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/address_til"
+            style="@style/EditCardTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_name_til">
+
+            <EditText
+                android:id="@+id/address_et"
+                style="@style/EditCardTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Address"
+                android:nextFocusDown="@+id/address2_et"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/address2_til"
+            style="@style/EditCardTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_til">
+
+            <EditText
+                android:id="@+id/address2_et"
+                style="@style/EditCardTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Address 2"
+                android:nextFocusDown="@+id/city_et"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/city_til"
+            style="@style/EditCardTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address2_til">
+
+            <EditText
+                android:id="@+id/city_et"
+                style="@style/EditCardTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="City"
+                android:nextFocusDown="@+id/state_et"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/state_til"
+            style="@style/EditCardTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_til">
+
+            <EditText
+                android:id="@+id/state_et"
+                style="@style/EditCardTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="State"
+                android:nextFocusDown="@+id/zip_et"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/zip_til"
+            style="@style/EditCardTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state_til">
+
+            <EditText
+                android:id="@+id/zip_et"
+                style="@style/EditCardTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Zip"
+                android:singleLine="true"
+                android:imeOptions="actionDone" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editRL"
+        android:background="@color/addressGreen"
+        android:text="@string/delete_this_contact"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/addressGreen"
+        android:text="@string/update_this_contact"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/addressGreen"
+        android:text="@string/add_this_contact"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bob\'s Address Book</string>
+    <string name="string">string</string>
+    <string name="address">address</string>
+    <string name="address2">address2</string>
+    <string name="city">city</string>
+    <string name="state">state</string>
+    <string name="zip">zip</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="lets_do_this">Let\'s do this!</string>
+    <string name="click_here_to_begin">Click Here To Begin</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="add_this_contact">Add This Contact</string>
+    <string name="update_this_contact">Update This Contact</string>
+    <string name="delete_this_contact">Delete This Contact</string>
+</resources>
